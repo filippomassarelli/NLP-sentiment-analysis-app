@@ -2,14 +2,18 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+//   .BundleAnalyzerPlugin;
 
 module.exports = {
   entry: "./src/client/index.js",
   mode: "development",
   devtool: "source-map",
   stats: "verbose",
+  output: {
+    libraryTarget: "var",
+    library: "myWebpackLibraryForJsFunctions",
+  },
   module: {
     rules: [
       {
@@ -37,9 +41,9 @@ module.exports = {
       cleanStaleWebpackAssets: true,
       protectWebpackAssets: false,
     }),
-    new BundleAnalyzerPlugin({
-      generateStatsFile: true,
-      statsFilename: "my-stat-file",
-    }),
+    // new BundleAnalyzerPlugin({
+    //   generateStatsFile: true,
+    //   statsFilename: "my-stat-file",
+    // }),
   ],
 };
