@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NLP Sentiment Analysis</title>
         <link rel="stylesheet" href="/styles/resets.css">
         <link rel="stylesheet" href="/styles/base.css">
         <link rel="stylesheet" href="/styles/header.css">
@@ -23,14 +24,30 @@
 
         <main>
             <section>
-                <form class="" onsubmit="return myWebpackLibraryForJsFunctions.handleSubmit(event)">
-                    <input id="city" type="text" name="input" value="" onblur="onBlur()" placeholder="Type city">
-                    <input type="submit" name="" value="submit" onclick="return myWebpackLibraryForJsFunctions.handleSubmit(event)" onsubmit="return myWebpackLibraryForJsFunctions.handleSubmit(event)">
+
+
+                <form class="" onsubmit="return ClientLibrary.handleSubmit(event)">
+
+                    <p>Select what type of input you are going to analyse:</p>
+
+                    <div>
+                      <input type="radio" id="text" name="format" value="text"
+                             checked>
+                      <label for="url">Text</label>
+                    </div>
+    
+                    <div>
+                      <input type="radio" id="url" name="format" value="url">
+                      <label for="url">URL</label>
+                    </div>
+
+                    <textarea required rows="3" id="input-text" placeholder="Insert text to analyse here.."></textarea>
+                    <input type="submit" value="Analyse Me" />
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
+                <strong>Results:</strong>
                 <div id="results"></div>
             </section>
 

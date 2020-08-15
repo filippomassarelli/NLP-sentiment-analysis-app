@@ -11,7 +11,7 @@ module.exports = {
   mode: "production",
   output: {
     libraryTarget: "var",
-    library: "Client",
+    library: "ClientLibrary",
   },
   optimization: {
     minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
