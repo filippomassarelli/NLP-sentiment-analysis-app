@@ -2,6 +2,7 @@ const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const fetchAPI = require("./meaningCloud");
 
 // setup dotenv
 const dotenv = require("dotenv");
@@ -11,11 +12,11 @@ dotenv.config();
 const app = express();
 
 // setup aylien API
-const aylien = require("aylien_textapi");
-const textapi = new aylien({
-  application_id: process.env.API_ID,
-  application_key: process.env.API_KEY,
-});
+// const aylien = require("aylien_textapi");
+// const textapi = new aylien({
+//   application_id: process.env.API_ID,
+//   application_key: process.env.API_KEY,
+// });
 
 // setup express to use body-parser as middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -35,18 +36,16 @@ app.get("/", (req, res) => {
 });
 
 // -- setup Submit route endpoint
-app.post("/submit", (req, res) => {
-  console.log("following request from client received in server: ");
-  console.log(req.body);
-  textapi.sentiment(req.body, function (error, response) {
-    if (error === null) {
-      console.log("Success!");
-      res.status(200).send(response);
-    } else {
-      console.log("failed to get sentiment analysis from Aylien API");
-      res.status(422).send(error);
-    }
-  });
+app.post("/submit", async (req, res) => {
+  const userInput = req.body;
+
+  try {
+    const apiData = await fetchAPI(userInput);
+    sentimentAnalysis = JSON.stringify(apiData);
+    res.status(200).send(sentimentAnalysis);
+  } catch (e) {
+    res.status(400).send(e);
+  }
 });
 
 // spin server

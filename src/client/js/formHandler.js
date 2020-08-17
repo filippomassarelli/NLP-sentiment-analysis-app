@@ -1,23 +1,22 @@
 function handleSubmit(event) {
   event.preventDefault();
-  const inputForAylien = {};
 
   // get the user's submission
   const format = document.querySelector("input[name=format]:checked").value;
-  const inputText = document.getElementById("input-text").value;
+  const input = document.getElementById("input-text").value;
+  const data = { format, input };
 
-  if (format === "url") {
-    inputForAylien.url = inputText;
-  } else {
-    inputForAylien.text = inputText;
-  }
-  console.log("handleSubmit stored this inputForAylien:");
-  console.log(inputForAylien);
+  console.log("handleSubmit data:");
+  console.log(data);
 
   //Send to server
-  ClientLibrary.getAylien("http://localhost:2099/submit", inputForAylien).then(
-    console.log("getAylien function was called by handleSubmit")
-  );
+  ClientLibrary.postData("/submit", data).then((res) => {
+    console.log(
+      "postData function was called by handleSubmit and returned this response"
+    );
+    console.log(res);
+    ClientLibrary.updateUI(res);
+  });
 }
 
 export { handleSubmit };
