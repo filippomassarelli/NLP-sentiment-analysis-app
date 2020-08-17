@@ -1,0 +1,26 @@
+$light-1: #ffff;
+$light-2: #f6f4e6;
+$primary: #006a71;
+$secondary: #ea907a;
+
+#results {
+  div {
+    background-color: $primary;
+    border-radius: 25px;
+    padding: 25px;
+    line-height: 1rem;
+
+    h1,
+    p {
+      color: $light-1;
+      span {
+        font-weight: 700;
+        color: $secondary;
+      }
+    }
+    i {
+      color: $secondary;
+      margin-right: 10px;
+    }
+  }
+}

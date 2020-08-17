@@ -1,12 +1,59 @@
+$font-stack: "Jura", sans-serif;
+
+$light-1: #ffff;
+$light-2: #f6f4e6;
+$primary: #006a71;
+$secondary: #ea907a;
+$dark-1: #41444b;
+
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+  border-radius: 25px;
+  padding: 40px;
+  background-color: $light-1;
+
+  color: $dark-1;
+
+  p {
+    color: $dark-1;
+    padding-bottom: 20px;
+  }
+
+  textarea {
+    min-width: 100%;
+    font-style: oblique;
+    margin-top: 20px;
+  }
+
+  .checkbox {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0;
+
+    input:checked + label {
+      color: $secondary;
+      font-weight: 700;
+    }
+    label {
+      margin-left: 10px;
+    }
+  }
 }
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+.cta {
+  background-color: $primary;
+  color: $light-1;
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100%;
+  line-height: 16px;
+  margin: 10px 0;
+  font-family: $font-stack;
+  font-weight: 700;
+}
+.cta:hover {
+  background-color: $secondary;
 }

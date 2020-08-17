@@ -1,5 +1,27 @@
+$light-1: #ffff;
+$light-2: #f6f4e6;
+$primary: #006a71;
+$secondary: #ea907a;
+
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-self: stretch;
+  background-color: $primary;
+  color: $light-1;
+  font-style: Bold 700;
+  font-size: 1.5rem;
+  span {
+    color: $secondary;
+    font-weight: 700;
+    margin-left: 12px;
+  }
+  i {
+    color: $light-1;
+  }
+  i:hover {
+    color: $secondary;
+  }
 }

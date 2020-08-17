@@ -1,5 +1,8 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$font-stack: "Jura", sans-serif;
+$primary-color: #f6f4e6;
+$secondary-color: #41444b;
+$highlight-color: #fddb3a;
+$base-color: #e6f6f2;
 
 body {
   font: 100% $font-stack;
@@ -7,6 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $base-color;
 }
 
 main {
