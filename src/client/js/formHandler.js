@@ -7,7 +7,7 @@ function handleSubmit(event) {
   const data = { format, input };
 
   //Send to server and use response to updateUI
-  ClientLibrary.postData("/submit", data).then((res) => {
+  ClientLibrary.postData("http://localhost:2099/submit", data).then((res) => {
     ClientLibrary.updateUI(res);
   });
 }
