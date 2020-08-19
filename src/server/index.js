@@ -50,36 +50,6 @@ app.post("/submit", async (req, res) => {
 
 // spin server
 const port = 2099;
-app.listen(port, function () {
+app.listen(process.env.PORT || port, function () {
   console.log(`App listening on port ${port}`);
 });
-
-// // Post route
-// app.post("/database", (req, res) => {
-//   const {
-//     polarity,
-//     subjectivity,
-//     text,
-//     polarity_confidence,
-//     subjectivity_confidence,
-//   } = req.body;
-
-//   let newData = {};
-//   newData.polarity = polarity;
-//   newData.subjectivity = subjectivity;
-//   newData.text = text;
-//   newData.polarity_confidence = polarity_confidence;
-//   newData.subjectivity_confidence = subjectivity_confidence;
-
-//   // pushing data to the database variable
-//   dataAPIResponse.push(newData);
-
-//   res.send(dataAPIResponse);
-// });
-
-// // GET route that request all data from the database
-// app.get("/all", (req, res) => {
-//   console.log(dataAPIResponse);
-
-//   res.send(dataAPIResponse);
-// })
