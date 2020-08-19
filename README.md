@@ -80,7 +80,7 @@ npm test
 
 ## Deployment
 
-Link to the webpage: https://huyen-news-sentiment-analysis.herokuapp.com/
+Deployed with Heroku at [nlp-sentiment-analysis-app.herokuapp](https://nlp-sentiment-analysis-app.herokuapp.com/)
 
 ## Built With
 
@@ -94,3 +94,4 @@ Link to the webpage: https://huyen-news-sentiment-analysis.herokuapp.com/
 - Babel
 - Service Worker
 - Jest
+- Heroku
