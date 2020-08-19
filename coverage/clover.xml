@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1597841738040" clover="3.2.0">
+  <project timestamp="1597841738040" name="All files">
+    <metrics statements="20" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0" elements="26" coveredelements="2" complexity="0" loc="20" ncloc="20" packages="1" files="3" classes="3"/>
+    <file name="formHandler.js" path="/Users/massa/Desktop/Coding/Udacity/Front_End_Nanodegree/Project_4_Practice/src/client/js/formHandler.js">
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+    </file>
+    <file name="postData.js" path="/Users/massa/Desktop/Coding/Udacity/Front_End_Nanodegree/Project_4_Practice/src/client/js/postData.js">
+      <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+    </file>
+    <file name="updateUI.js" path="/Users/massa/Desktop/Coding/Udacity/Front_End_Nanodegree/Project_4_Practice/src/client/js/updateUI.js">
+      <metrics statements="7" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

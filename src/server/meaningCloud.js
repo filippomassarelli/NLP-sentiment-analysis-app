@@ -1,4 +1,5 @@
 const axios = require("axios");
+const regeneratorRuntime = require("regenerator-runtime");
 
 const fetchAPI = async (data) => {
   const res = await axios(

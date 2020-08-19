@@ -1,3 +1,5 @@
+const regeneratorRuntime = require("regenerator-runtime");
+
 const postData = async (passedUrl, passedData) => {
   const request = await fetch(passedUrl, {
     method: "POST",

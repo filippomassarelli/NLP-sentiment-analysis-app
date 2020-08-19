@@ -6,15 +6,8 @@ function handleSubmit(event) {
   const input = document.getElementById("input-text").value;
   const data = { format, input };
 
-  console.log("handleSubmit data:");
-  console.log(data);
-
-  //Send to server
+  //Send to server and use response to updateUI
   ClientLibrary.postData("/submit", data).then((res) => {
-    console.log(
-      "postData function was called by handleSubmit and returned this response"
-    );
-    console.log(res);
     ClientLibrary.updateUI(res);
   });
 }
