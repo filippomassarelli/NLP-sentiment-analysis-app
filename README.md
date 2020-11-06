@@ -1,4 +1,4 @@
-<img src="https://github.com/filippomassarelli/NLP-sentiment-analysis-app/blob/master/src/client/NLP screenshot.png?raw=true" width=150>
+<img src="https://github.com/filippomassarelli/NLP-sentiment-analysis-app/blob/master/src/client/NLP screenshot.png?raw=true">
 
 # Sentiment Analysis with Natural Language Processing
 
