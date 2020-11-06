@@ -1,3 +1,5 @@
+<img src="https://github.com/filippomassarelli/NLP-sentiment-analysis-app/src/client/NLP screenshot.png?raw=true" width=150>
+
 # Sentiment Analysis with Natural Language Processing
 
 Fourth project for Udacity's Front-end Nanodegree.
