@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "NLP sentiment analysis app using Aylien API",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "aylien_textapi": "^0.7.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.3.0",
